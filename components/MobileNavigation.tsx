@@ -103,7 +103,7 @@ const MobileNavigation = ({
 
                     <div className="flex flex-col justify-between gap-5 pb-5">
                         File uploader
-                        {/* <FileUploader ownerId={ownerId} accountId={accountId} /> */}
+                        <FileUploader ownerId={ownerId} accountId={accountId} />
                         <Button
                             type="submit"
                             className="mobile-sign-out-button"

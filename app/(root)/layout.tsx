@@ -1,8 +1,8 @@
 import Header from '@/components/Header'
 import MobileNavigation from '@/components/MobileNavigation'
 import Sidebar from '@/components/Sidebar'
+import { Toaster } from '@/components/ui/toaster'
 import { getCurrentUser } from '@/lib/actions/user.actions'
-import Image from 'next/image'
 import { redirect } from 'next/navigation'
 import React from 'react'
 
@@ -27,6 +27,8 @@ const Layout = async ({ children }: { children: React.ReactNode }) => {
                     </div>
 
                 </section>
+
+                <Toaster />
             </main>
         </>
 
