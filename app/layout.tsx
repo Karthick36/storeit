@@ -21,8 +21,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "StoreIt",
-  description: "StoreIt - The only storage solution you need",
+  title: "Cloudify",
+  description: "Cloudify - The only storage solution you need",
 };
 
 export default function RootLayout({
