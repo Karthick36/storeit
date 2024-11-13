@@ -35,8 +35,14 @@ Follow these steps to set up StoreIt on your local machine:
    - Ensure you have Appwrite set up on your local server.
    - Update your environment variables in `.env.local`:
      ```env
-     NEXT_PUBLIC_APPWRITE_ENDPOINT=https://your-appwrite-server.com/v1
-     NEXT_PUBLIC_APPWRITE_PROJECT=your_project_id
+     NEXT_PUBLIC_APPWRITE_ENDPOINT="https://cloud.appwrite.io/v1"  
+     NEXT_PUBLIC_APPWRITE_PROJECT="<Your Appwrite Project ID>"  
+     NEXT_PUBLIC_APPWRITE_DATABASE="<Your Appwrite Database Name>"  
+     NEXT_PUBLIC_APPWRITE_USERS_COLLECTION="<Your Appwrite Users Collection>"  
+     NEXT_PUBLIC_APPWRITE_FILES_COLLECTION="<Your Appwrite Files Collection>"  
+     NEXT_PUBLIC_APPWRITE_BUCKET="<Your Appwrite Bucket>"  
+     NEXT_APPWRITE_KEY="<Your Appwrite API Key>"
+
      ```
 
 4. **Run the development server**:
