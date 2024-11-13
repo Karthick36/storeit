@@ -6,7 +6,7 @@ import { convertFileSize } from '@/lib/utils'
 import ActionDropdown from './ActionDropdown'
 import FormattedDateTime from './FormattedDateTime'
 
-const Card = ({ file }: Models.Document) => {
+const Card = ({ file }: { file: Models.Document }) => {
     return (
         <Link href={file.url} className='file-card' target='_blank'>
             <div className='flex justify-between'>
