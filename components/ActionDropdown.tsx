@@ -18,7 +18,7 @@ import { constructDownloadUrl } from '@/lib/utils'
 import Link from 'next/link'
 import { Button } from './ui/button'
 import { Input } from './ui/input'
-import { renameFile } from '@/lib/actions/file.actions'
+import { deleteFile, renameFile, updateFileUsers } from '@/lib/actions/file.actions'
 import { usePathname } from 'next/navigation'
 import { FileDetails, ShareInput } from './ActionsModalContent'
 
@@ -57,9 +57,9 @@ const ActionDropdown = ({ file }: { file: Models.Document }) => {
                     extension: file.extension,
                     path
                 }),
-            // share: () => updateFileUsers({ fileId: file.$id, emails, path }),
-            // delete: () =>
-            //     deleteFile({ fileId: file.$id, bucketFileId: file.bucketFileId, path }),
+            share: () => updateFileUsers({ fileId: file.$id, emails, path }),
+            delete: () =>
+                deleteFile({ fileId: file.$id, bucketFileId: file.bucketFileId, path }),
         };
         success = await actions[action.value as keyof typeof actions]();
         if (success) closeAllModals();
@@ -70,14 +70,14 @@ const ActionDropdown = ({ file }: { file: Models.Document }) => {
     const handleRemoveUser = async (email: string) => {
         const updatedEmails = emails.filter((e) => e !== email);
 
-        // const success = await updateFileUsers({
-        //     fileId: file.$id,
-        //     emails: updatedEmails,
-        //     path,
-        // });
+        const success = await updateFileUsers({
+            fileId: file.$id,
+            emails: updatedEmails,
+            path,
+        });
 
-        // if (success) setEmails(updatedEmails);
-        // closeAllModals();
+        if (success) setEmails(updatedEmails);
+        closeAllModals();
     };
 
     const renderDialogContent = () => {
