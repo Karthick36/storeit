@@ -16,14 +16,16 @@ const Card = ({ file }: Models.Document) => {
                     url={file.url}
                     className='!size-20'
                     imageClassName='!size-11' />
+                    
+                <div className="flex flex-col items-end justify-between">
+                    <ActionDropdown file={file} />
+
+                    <p className="body-1">{convertFileSize(file.size)}</p>
+                </div>
             </div>
 
 
-            <div className="flex flex-col items-end justify-between">
-                {/* <ActionDropdown file={file} /> */}
-                Action
-                <p className="body-1">{convertFileSize(file.size)}</p>
-            </div>
+
 
             <div className="file-card-details">
                 <p className="subtitle-2 line-clamp-1">{file.name}</p>
