@@ -2,7 +2,7 @@
 
 Welcome to **StoreIt** — a powerful, easy-to-use web application that allows you to upload, share, and manage your documents seamlessly. Whether you're looking for something similar to Google Drive or Dropbox, StoreIt has you covered! ✉️⬇️
 
-![StoreIt Dashboard](app/assets/images/dashboard-screenshot.png)
+![StoreIt Dashboard](https://github.com/user-attachments/assets/3e294dae-9da7-4eed-86cb-7bb7601fc512)
 
 ## 🚀 Features
 - **Upload Documents**: Add any type of document to your personal storage space.
@@ -50,15 +50,23 @@ Follow these steps to set up StoreIt on your local machine:
 ## 💡 Usage
 1. **Sign Up and Login**
    - Enter your email and receive an OTP for secure login.
-   ![OTP Screen](app/assets/images/otp-screen.png)
+![SignUp Screen](https://github.com/user-attachments/assets/69607580-4e87-4a04-b557-7025e107cce0)
+![OTP Screen](https://github.com/user-attachments/assets/ce2228eb-ba20-462e-bfd6-8ba2ff932e37)
+![Login Screen](https://github.com/user-attachments/assets/d32d9878-ea1e-4767-b355-1f4a17414c6d)
 
-2. **Uploading Documents**
-   - Click on the ‘Upload’ button and choose your files.
-   ![Upload Document](app/assets/images/upload-screenshot.png)
+
+
+
+
+2. **File Actions**
+   - Click on the action icon button and choose the actions.
+   ![File Action Document](https://github.com/user-attachments/assets/8dd2f9e1-37f7-496f-85b6-f60502626dc4)
+
 
 3. **Sharing Files**
    - Share documents by entering the recipient's email address.
-   ![Share Document](app/assets/images/share-screenshot.png)
+   ![Share Document](https://github.com/user-attachments/assets/a28d49c7-e750-4172-9992-41d09c7e49af)
+
 
 ## 🛡️ Security Features
 - **OTP Authentication**: Ensures only verified users can access their accounts.
